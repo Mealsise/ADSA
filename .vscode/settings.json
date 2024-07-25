@@ -1,0 +1,24 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "editor.minimap.enabled": true,
+    "editor.minimap.scale": 2,
+    "editor.minimap.showSlider": "always",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "files.exclude": {
+        "**/.git": true
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "window.zoomLevel": -0.2,
+    "workbench.editor.highlightModifiedTabs": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.parameterHints.enabled": true,
+    "explorer.compactFolders": false,
+    "explorer.decorations.badges": false,
+    "explorer.sortOrder": "type",
+    "editor.renderWhitespace": "trailing",
+    "editor.renderControlCharacters": true,
+    "editor.fontFamily": "monospace, Consolas, 'Courier New', monospace"
+}
