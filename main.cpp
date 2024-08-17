@@ -30,8 +30,8 @@ int main(void)
     Number product(2, 10);
 
     // Perform operations
-    // Number sum = I1 + I2;
-    // Number product = I1 * I2;
+    sum = number_1 + number_2;
+    // product = number_1 * number_2;
 
     // Print results
     std::cout <<

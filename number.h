@@ -14,7 +14,7 @@ public:
     Number(int input, int base);
     Number(std::string input, int base);
 
-    // Number operator+(const Number& other);
+    Number operator+(const Number& other);
     // Number operator*(const Number& other);
 
     // Number operator+(const int other) {this + Number(other, this->base)}
