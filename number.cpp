@@ -1,7 +1,5 @@
 #include "number.h"
 
-bool valid(char)
-
 Number::Number(std::string input, int base)
 : base(base)
 {
