@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+// #include <pair>
 
 class Number {
 private:
@@ -15,7 +16,12 @@ public:
     Number(std::string input, int base);
 
     Number operator+(const Number& other);
-    // Number operator*(const Number& other);
+    Number operator-(const Number& other);
+    Number operator*(const Number& other);
+
+    std::pair<Number, Number> split() const;
+
+    void multiplyByBasePower(int power);
 
     // Number operator+(const int other) {this + Number(other, this->base)}
     // Number operator*(const int other) {this * Number(other, this->base)}

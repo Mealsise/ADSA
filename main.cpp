@@ -31,7 +31,7 @@ int main(void)
 
     // Perform operations
     sum = number_1 + number_2;
-    // product = number_1 * number_2;
+    product = number_1 * number_2;
 
     // Print results
     std::cout <<
