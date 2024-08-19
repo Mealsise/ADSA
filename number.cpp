@@ -115,7 +115,6 @@ Number Number::operator*(const Number& other)
 
     int length_1 = this->digits.size();
     int length_2 = mod_other.digits.size();
-    int max_len = std::max(length_1, length_2);
 
     if (length_1 <= 1 && length_2 <= 1)
     {
