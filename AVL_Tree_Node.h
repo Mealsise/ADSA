@@ -77,23 +77,18 @@ public:
     AVL_Tree_Node* findMin() {return left ? left->findMin() : this;}
 
     AVL_Tree_Node* remove(int key) {
-        if (key < value)
+        if (key < value) {
             if (left) left = left->remove(key);
-        else if (key > value)
+        } else if (key > value) {
             if (right) right = right->remove(key);
-        else
+        } else
         {
             // Node to delete found
-            if (!left)
+            if (!left || !right) 
             {
-                AVL_Tree_Node* temp = right;
-                right = nullptr;
-                return temp;
-            }
-            else if (!right)
-            {
-                AVL_Tree_Node* temp = left;
-                left = nullptr;
+                // One child or no child case
+                AVL_Tree_Node* temp = left ? left : right;
+                delete this;
                 return temp;
             }
             else
