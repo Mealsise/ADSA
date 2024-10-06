@@ -17,9 +17,9 @@ HashTable::HashTable()
 void HashTable::insert(const std::string& key)
 {
     int index = hashFunction(key);
-    if (table[index].status == table_slot::OCCUPIED)
+    while (table[index].status == table_slot::OCCUPIED)
     {
-        return;
+        index++;
     }
     table[index].status = table_slot::OCCUPIED;
     table[index].contents = key;
