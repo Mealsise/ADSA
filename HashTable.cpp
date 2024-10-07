@@ -19,7 +19,7 @@ void HashTable::insert(const std::string& key)
     int index = hashFunction(key);
     while (table[index].status == table_slot::OCCUPIED)
     {
-        index++;
+        index = index == 25 ? 0 : index + 1;
     }
     table[index].status = table_slot::OCCUPIED;
     table[index].contents = key;
