@@ -251,6 +251,8 @@ public:
         {
             process_edge_for_second_pass(edge);
         }
+
+        std::cout << total_cost << std::endl;
     }
 
     int get_cost()
