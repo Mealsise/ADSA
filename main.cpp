@@ -103,7 +103,7 @@ struct Edge
 {
     int weight;
     Connection connection;
-}
+};
 
 class Graph
 {
@@ -210,7 +210,7 @@ private:
         {
             modified_spanning_tree.push_back(edge); 
             union_sets(root_start, root_end);
-            total_build_cost += edge.weight;
+            total_cost += edge.weight;
         }
     }
 
@@ -253,11 +253,11 @@ public:
         }
     }
 
-    void get_cost()
+    int get_cost()
     {
         return total_cost;
     }
-}
+};
 
 
 
@@ -284,7 +284,7 @@ int main()
     graph.kruskal_second_pass();
 
     // Print the cost of the shortest path
-    std:cout << graph.get_cost() << "\n";
+    std::cout << graph.get_cost() << "\n";
 
     return 0;
 }
