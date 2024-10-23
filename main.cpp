@@ -126,7 +126,7 @@ public:
         : built_roads_grid(countryGrid),
           build_cost_grid(buildGrid),
           destroy_cost_grid(destroyGrid),
-          nodes(countryGrid.size() * countryGrid[0].size()),
+          nodes(countryGrid.size()),
           total_cost(0)
     {
             
