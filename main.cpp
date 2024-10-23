@@ -200,8 +200,8 @@ private:
 
     void process_edge_for_second_pass(const Edge &edge)
     {
-        int start_node = edge.connection.node1;
-        int end_node = edge.connection.node2;
+        int start_node = edge.connection.node_1;
+        int end_node = edge.connection.node_2;
 
         int root_start = find_ancestor(start_node);
         int root_end = find_ancestor(end_node);
