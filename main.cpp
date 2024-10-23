@@ -251,8 +251,6 @@ public:
         {
             process_edge_for_second_pass(edge);
         }
-
-        std::cout << total_cost << std::endl;
     }
 
     int get_cost()
@@ -272,6 +270,8 @@ int main()
 
     // Read and parse input
     read_input(countryGrid, buildGrid, destroyGrid);
+
+    if (countryGrid.size() == 0) return 0;
 
     // Initialise Graph
     Graph graph(countryGrid, buildGrid, destroyGrid);
