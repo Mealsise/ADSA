@@ -233,7 +233,7 @@ public:
         std::vector<Edge> sorted_edges(weighted_graph.begin(), weighted_graph.end());
         std::sort(sorted_edges.begin(), sorted_edges.end(), [](const Edge &a, const Edge &b)
         {
-            return a.weight < b.weight;
+            return a.weight > b.weight;
         });
 
         for (const Edge &edge : sorted_edges)
